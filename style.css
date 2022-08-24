@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #bdc3c7;
+}
+.wrapper{
+	width:900px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.header-area img{
+	width: 100%;
+	height: 150px;
+}
+.main-menu > ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	height: 35px; 
+	background-color: #053BF6;
+}
+.main-menu > ul > li{
+	float: left;
+	position: relative;
+}
+.main-menu > ul > li >a{
+	display: block;
+	width: 100px;
+	height: 35px;
+	color: #fff;
+	background-color: #053BF6;
+	text-align: center;
+	line-height: 35px;
+	text-decoration: none;
+	border-right: 1px dotted #fff;
+}
+.main-menu > ul > li > a:hover{
+	color: green; 
+	background-color: #3498db;
+}
+.main-menu > ul > li > ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 48px;
+	transform: scaleY(0);
+	z-index: 99;
+	transition: all .35s;
+}
+.main-menu > ul > li > ul::after{
+	content: '';
+	position: absolute;
+    left: 34px;
+    top: -19px;
+	border-width: 10px;
+	border-color: transparent transparent #2F31EB transparent;
+	border-style: solid;
+}
+.main-menu > ul > li > ul > li > a{
+	width: 250px;
+	height: 35px;
+	background-color: #2F31EB;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 35px;
+	border-bottom: 1px dashed #fff;
+}
+.main-menu > ul > li > ul > li:last-child > a{
+	border: none;
+}
+.main-menu > ul > li > ul > li:hover > a{
+	background-color: #2F31EB;
+}
+.main-menu > ul > li:hover > ul{
+	transform: scaleY(1);
+}
+.slider-area{
+	overflow: hidden;
+}
+
+.slider-image img{
+	width: 100%;
+	height: 450px;
+}
+.slider-image{
+	position: relative
+	;
+}
+.slider-image::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	opacity: 0;
+	transition: all .35s;
+}
+.slider-text{
+	position: absolute;
+	top: -20%;
+	text-align: center;
+	width: 100%;
+	margin-top: -40px;
+	z-index: 5;
+	transition: all .35s;
+}
+.slider-text h1{
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: arial;
+}
+.slider-text p a{
+	color: #fff;
+	font-size: 15px;
+	text-transform: lowercase;
+	text-decoration: none;
+}
+.slider-area:hover .slider-image::after{
+	opacity: 1;
+}
+.slider-area:hover .slider-text{
+	top: 50%;
+}
+.search-area{
+	padding: 10px o;
+	margin-left: 620px;
+    line-height: 33px;
+}
+.search-area input[type='text']{
+	background-color: #053BF6;
+	padding: 2px;
+	border-radius: 4px 4px 4px 4px;
+	border-color: #89999B;
+}
+.search-area input[type='submit']{
+	background-color: #053BF6;
+	color: #fff;
+	border-radius: 4px 4px 4px 4px;
+	padding: 2px;
+
+}
+.mrq-text{
+	background-color: #2980b9;
+	color: #fff;
+	margin: 0 auto;
+	padding: 2PX;
+}
